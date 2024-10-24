@@ -1,4 +1,4 @@
-// src/components/LandingPage.js
+
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from 'firebase/auth';
@@ -19,7 +19,7 @@ const LandingPage = () => {
         const idToken = await user.getIdToken();
         window.postMessage({ action: "storeToken", message: idToken },"*");
         try {
-          navigate('/home'); // Redirect to home after sign-in
+          navigate('/home'); 
         } catch (error) {
           setError('Error fetching user token');
           console.error('Error during token retrieval:', error);

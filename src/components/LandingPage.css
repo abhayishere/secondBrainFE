@@ -1,10 +1,10 @@
-/* LandingPage.css */
+
 
 body {
   margin: 0;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f7f7f7; /* Light background for a clean look */
-  color: #333; /* Dark text for readability */
+  background-color: #f7f7f7; 
+  color: #333; 
 }
 
 .landing-container {
@@ -12,55 +12,55 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
   padding: 20px;
   text-align: center;
 }
 
 h1 {
-  font-size: 2.5rem; /* Bigger heading for emphasis */
-  margin-bottom: 10px; /* Space below the heading */
-  color: #2c3e50; /* Darker shade for contrast */
-  line-height: 1.2; /* Tight line height for a modern feel */
+  font-size: 2.5rem; 
+  margin-bottom: 10px; 
+  color: #2c3e50; 
+  line-height: 1.2; 
 }
 
 p {
-  font-size: 1.125rem; /* Slightly larger text for better readability */
-  margin-bottom: 20px; /* Space below the paragraph */
-  max-width: 600px; /* Limit width for better reading */
-  color: #555; /* Medium gray for less strain on the eyes */
+  font-size: 1.125rem; 
+  margin-bottom: 20px; 
+  max-width: 600px; 
+  color: #555; 
 }
 
 button {
-  padding: 10px 20px; /* Padding for the button */
-  font-size: 1rem; /* Consistent font size */
-  background-color: #3498db; /* Blue button for emphasis */
-  color: white; /* White text on button */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  background-color: #3498db; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
 }
 
 button:hover {
-  background-color: #2980b9; /* Darker blue on hover */
+  background-color: #2980b9; 
 }
 
 button:focus {
-  outline: none; /* Remove default outline */
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* Subtle focus effect */
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); 
 }
 
 @media (max-width: 768px) {
   h1 {
-      font-size: 2rem; /* Responsive heading */
+      font-size: 2rem; 
   }
 
   p {
-      font-size: 1rem; /* Responsive paragraph */
+      font-size: 1rem; 
   }
 
   button {
-      font-size: 0.9rem; /* Responsive button */
+      font-size: 0.9rem; 
   }
 }

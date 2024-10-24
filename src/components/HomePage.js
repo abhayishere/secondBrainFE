@@ -42,6 +42,7 @@ const HomePage = () => {
   }, []);
 
   const handleSignOut = () => {
+    console.log("Logout attempted")
     const idToken = localStorage.getItem('firebaseToken');
     console.log("id token is extracted", idToken)
     window.postMessage({ action: "logOut",message: idToken},"*");
@@ -77,7 +78,7 @@ const HomePage = () => {
     item.url.toLowerCase().includes(search.toLowerCase())
   );
 
-  // Function to format the link text
+  
   const formatLinkText = (url) => {
     const match = url.match(/:\/\/(.*?)\./);
     console.log(url, match)
@@ -99,7 +100,9 @@ const HomePage = () => {
         {filteredData.map((item) => (
           <div key={item.id} className="grid-item">
             <h3>{item.title}</h3>
-            <span>{formatLinkText(item.url)}</span>
+            <a href={item.url} target="_blank" rel="noopener noreferrer" className="link">
+              {formatLinkText(item.url)}
+            </a>
             {item.screenshot && <img src={item.screenshot} alt={item.title} />}
             <button className="delete-button" onClick={() => handleDelete(item.id)}>Delete</button>
           </div>
