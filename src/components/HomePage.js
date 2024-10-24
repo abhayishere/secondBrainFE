@@ -39,7 +39,7 @@ const HomePage = () => {
     };
 
     fetchData();
-  }, []);
+  }, [navigate]);
 
   const handleSignOut = () => {
     console.log("Logout attempted")
